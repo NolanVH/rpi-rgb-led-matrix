@@ -67,7 +67,7 @@ HARDWARE_DESC?=regular
 # typically should double check cables and add TTL level converter if you
 # haven't.
 # Flag: --led-slowdown-gpio
-#DEFINES+=-DRGB_SLOWDOWN_GPIO=1
+DEFINES+=-DRGB_SLOWDOWN_GPIO=3
 
 # This allows to change the base time-unit for the on-time in the lowest
 # significant bit in nanoseconds.
@@ -96,7 +96,7 @@ HARDWARE_DESC?=regular
 # the image will have visible brightness glitches; but for debugging, this is
 # a good choice.
 # Flag: --led-no-hardware-pulses
-#DEFINES+=-DDISABLE_HARDWARE_PULSES
+DEFINES+=-DDISABLE_HARDWARE_PULSES
 
 # If defined, include support for deprecated transformers.
 # This might be useful to support very old code, but you
